@@ -6,28 +6,36 @@ The task should take a few hours to complete and not everything has to be perfec
 Focus on what you think is important and document what you think could have been
 improved.
 
-## The task
+## Description
 
-In the repo there is a file called `numbers.csv`, this is the list of all numbers that should be listed.
+Your web page should:
+* allow filtering by `msisdn` to find numbers by searching for
+    * a specific prefix,
+    * a specific suffix,
+    * or a substring of the number;
+* as well as support writing the number both as `msisdn` (+46712) or as a mobile number (0712);
+* filter the numbers by `grade`, `type` or if it is reserved or not;
+* show all information about each field in the table.
+
+### Data
+
+In the repo there is a file called `numbers.csv`, that contains a list of the numbes to show on the web page.
 
 Each number has the following fields:
 
 * `msisdn` is the formatted number (see [MSISDN](https://en.wikipedia.org/wiki/MSISDN) for more information about the formatting);
-* `grade` is a number that signifies the numbers how valuable the number is (typically the number of
-consecutive zeroes), the higher the grade the more expensive it is;
-* `type` is what type of number it is (`CELL` for mobile numbers, `FIXED` for landline numbers and `DATA` numbers used only
-for data SIM cards);
+* `grade` is a number signifying the how valuable the number is (the higher the number, the more costly it is);
+* `type` is either `CELL` for mobile numbers or `FIXED` for landline numbers;
 * `reserved_at` is either empty if the number isn't reserved or a timestamp when the number was reserved;
-* `expires_at` is either empty if the number isn't reserved or reserved indefinitely, otherwise it is the
-timestamp when the reservation expires.
+* `expires_at` is either empty if the number isn't reserved or reserved indefinitely, otherwise it is the timestamp when the reservation expires.
 
-Your web page should allow filtering by `msisdn` to find numbers by searching for prefixes, suffixes or parts of the number. Additionally it should be possible to filter the numbers by the `grade`, `type` and if the number is reserved.
+## Submission
 
-All information about the number should be visible on the web page.
+You should submit your code by using [`git bundle`](https://git-scm.com/docs/git-bundle.html) and sending the bundled file via mail.
 
-## Documentation
+## Requirements
 
-When sending your code to us include how to install and start the project as well as how to test it.
-
-If you chose to focus less on some parts document what and how they might be improved.
-
+* Your submission should include a `README.md` file documenting how to install and start the project;
+* You won't have the time to make everything perfect, just document what is lacking and how you would improve it;
+* Do not make the task harder than it is, it should be solved in a couple of hours;
+* You are free to use any technology and framework of your choice;
