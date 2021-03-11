@@ -29,6 +29,8 @@ Each number has the following fields:
 
 You should submit your code by using [`git bundle`](https://git-scm.com/docs/git-bundle.html) and sending the bundled file via mail.
 
+_* Your work will not be used in the Telness product or in any part of such product, the only purpose is to test your technical skills._
+
 ## Requirements
 
 * Your submission should include a `README.md` file documenting how to install and start the project;
