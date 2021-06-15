@@ -35,5 +35,5 @@ _* Your work will not be used in the Telness product or in any part of such prod
 
 * Your submission should include a `README.md` file documenting how to install and start the project;
 * You won't have the time to make everything perfect, just document what is lacking and how you would improve it;
-* Do not make the task harder than it is, it should take a couple of hours but absolutely not more than 8 hours;
+* Do not make the task harder than it is, you should spend between 4-8 hours but no more than 8 hours;
 * You are free to use any technology and framework of your choice;
