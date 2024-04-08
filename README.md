@@ -1,39 +1,39 @@
 ## Phone number search
 
-Your task is to create a web page, similar to one that already exists on Telness, where users can list and search for phone numbers.
+## Overview
 
-## Description
+This test assesses your ability to develop a full-stack web application. Your task is to create a web page, similar to a feature on Telness, focused on listing and searching for phone numbers. This challenge involves both frontend and backend development, including database interactions.
 
-Your web page should:
-* allow filtering by `msisdn` to find phone numbers by searching for
-    * a specific prefix,
-    * a specific suffix,
-    * or a substring of the number;
-* as well as support writing the number both as `msisdn` (+46712) or as a mobile number (0712);
-* filter the phone numbers by `grade`, `type` or if it is reserved or not;
-* show all information about each field in the table.
+## Task Description
 
-### Data
+### Frontend
 
-In the repo there is a file called `numbers.csv`, that contains a list of the numbes to show on the web page.
+Develop a web page that enables users to:
 
-Each number has the following fields:
+- **Search for Phone Numbers:** Implement filtering to allow searches for phone numbers using a specific prefix, suffix, or any substring.
+- **Support Multiple Formats:** Recognize phone numbers entered both as MSISDN (e.g., +46712) and as a regular mobile number (e.g., 0712).
+- **Filter by Attributes:** Provide filtering options for phone numbers by grade, type (CELL or FIXED), and reservation status.
+- **Display Information:** Present all relevant information for each phone number in a table.
 
-* `msisdn` is the formatted number (see [MSISDN](https://en.wikipedia.org/wiki/MSISDN) for more information about the formatting);
-* `grade` is a number signifying the how valuable the number is (the higher the number, the more costly it is);
-* `type` is either `CELL` for mobile numbers or `FIXED` for landline numbers;
-* `reserved_at` is either empty if the number isn't reserved or a timestamp when the number was reserved;
-* `expires_at` is either empty if the number isn't reserved or reserved indefinitely, otherwise it is the timestamp when the reservation expires.
+### Backend
 
-## Submission
+- **API Development:** Create a backend service that provides phone number data through a REST or GraphQL API. While Golang is the preferred language for this backend service, you may opt for another language if you are not comfortable with Golang.
+- **Database Interaction:** The backend should query phone number data from a database. Design and implement the database schema based on the provided `numbers.csv` file structure.
 
-You should submit your code by using [`git bundle`](https://git-scm.com/docs/git-bundle.html) and sending the bundled file via mail.
+## Data
 
-_* Your work will not be used in the Telness product or in any part of such product, the only purpose is to test your technical skills._
+The `numbers.csv` file in the repository contains the data for this project, with fields including `msisdn`, `grade`, `type`, `reserved_at`, and `expires_at`.
 
-## Requirements
+## Submission Guidelines
 
-* Your submission should include a `README.md` file documenting how to install and start the project;
-* You won't have the time to make everything perfect, just document what is lacking and how you would improve it;
-* Do not make the task harder than it is, you should spend between 4-8 hours but no more than 8 hours;
-* You are free to use any technology and framework of your choice;
+- **Code Submission:** Use `git bundle` to submit your code and send the bundled file via email.
+- **README.md:** Your submission must include a README.md documenting:
+    - Installation and startup instructions for the project.
+    - Any areas of the project that are incomplete or could be improved, with proposed plans for enhancement.
+- **Time Management:** Aim to spend between 4 to 8 hours on this task, not exceeding the maximum time limit.
+- **Technology Freedom:** You are free to choose any technology and framework for both the frontend and backend parts of the project.
+
+## Additional Information
+
+- The purpose of this test is to assess your technical skills comprehensively, including your ability to integrate frontend and backend technologies as well as perform database interactions. The work you submit will not be used in any Telness products.
+- Emphasize functionality, clarity, and user experience in your web page design, while also ensuring the backend is efficiently implemented and securely interacts with the database.
