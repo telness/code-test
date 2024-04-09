@@ -2,7 +2,10 @@
 
 ## Overview
 
-This test assesses your ability to develop a full-stack web application. Your task is to create a web page, similar to a feature on Telness, focused on listing and searching for phone numbers. This challenge involves both frontend and backend development, including database interactions.
+Hello there!
+Thanks again for your interest in joining our development team and congrats to moving forward in our recruitment process.
+
+This test assesses your ability to develop a full-stack web application. Your task is to create a web page, similar to a feature in Telness Tech's platform, focused on listing and searching for phone numbers. This challenge involves both frontend and backend development, including database interactions.
 
 ## Task Description
 
